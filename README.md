@@ -60,3 +60,16 @@ Tech Stack
 	•	argparse (CLI interface)
 	•	JSON reporting
 	•	Custom evaluation logic
+
+	## Temperature Experiment Example
+
+Below is an example run comparing consistency at low temperature (0.2).
+
+- Model: gpt-4o-mini
+- Runs: 3
+- Suite: math
+- Temperature: 0.2
+
+Lower temperatures produced deterministic outputs with 100% consistency.
+
+![Temperature Demo](screenshots/LLMtemp.png)
