@@ -5,7 +5,7 @@ LLM Reliability Lab
 
 A small CLI project where I experiment with how consistent large language models actually are.
 
-I built this to better understand how models behave when you run the same prompt multiple times — especially when changing temperature and comparing different models.
+I built this to better understand how models behave when you run the same prompt multiple times, especially when changing temperature and comparing different models.
 
 This is not a production evaluation framework. It’s a learning project to explore reliability, variability, and basic benchmarking concepts in LLM systems.
 
