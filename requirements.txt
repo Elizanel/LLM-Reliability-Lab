@@ -1,17 +1,102 @@
+# annotated-types
+# Used by Pydantic.
+# Helps with runtime type validation and advanced type annotations.
+# I didn’t install this directly — it comes from pydantic.
 annotated-types==0.7.0
+
+
+# anyio
+# Async compatibility layer.
+# httpx uses this for async networking.
+# OpenAI SDK depends on httpx → which depends on anyio.
 anyio==4.12.1
+
+
+# certifi
+# Provides up-to-date CA certificates.
+# Used by httpx for secure HTTPS requests.
 certifi==2026.1.4
+
+
+# distro
+# Used by OpenAI SDK internally to detect Linux distributions.
+# Helps with environment-aware behavior.
 distro==1.9.0
+
+
+# h11
+# Low-level HTTP/1.1 protocol library.
+# Used by httpcore → used by httpx → used by openai.
 h11==0.16.0
+
+
+# httpcore
+# Core HTTP client implementation.
+# httpx builds on top of this.
 httpcore==1.0.9
+
+
+# httpx
+# Modern async HTTP client.
+# OpenAI SDK uses this to make API requests.
+# This is one of the most important transitive dependencies.
 httpx==0.28.1
+
+
+# idna
+# Handles internationalized domain names.
+# Required by networking libraries.
 idna==3.11
+
+
+# jiter
+# JSON iterator / streaming parser.
+# Used internally by OpenAI SDK for streaming responses.
 jiter==0.13.0
+
+
+# openai
+# Official OpenAI SDK.
+# This is the package I directly use to call models.
 openai==2.21.0
+
+
+# pydantic
+# Data validation + structured models.
+# OpenAI SDK uses this heavily for typed responses.
 pydantic==2.12.5
+
+
+# pydantic_core
+# Rust-based core engine behind Pydantic v2.
+# Handles fast validation + parsing.
 pydantic_core==2.41.5
+
+
+# python-dotenv
+# Loads environment variables from .env.
+# This allows me to keep API keys outside the code.
 python-dotenv==1.2.1
+
+
+# sniffio
+# Detects which async framework is running (asyncio, trio, etc).
+# Required by anyio.
 sniffio==1.3.1
+
+
+# tqdm
+# Progress bar utility.
+# Sometimes used internally or for long-running calls.
 tqdm==4.67.3
+
+
+# typing-inspection
+# Used internally by Pydantic for advanced type handling.
 typing-inspection==0.4.2
+
+
+# typing_extensions
+# Backports typing features for compatibility.
+# Required by pydantic + other modern libraries.
 typing_extensions==4.15.0
